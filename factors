@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void factorize(int num)
+{
+	int i;
+	printf("%d=", num);
+	for (i = 2; i <= num; i++)
+	{
+	while (num % i == 0)
+	{
+	printf("%d", i);
+	num /= i;
+	if (num > 1)
+	{
+	printf("*");
+	}
+	}
+	}
+	printf("\n");
+}
